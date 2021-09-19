@@ -65,17 +65,16 @@ function generate() {
     })
 
     function appendData(data) {
-        if (data.error == "true") {
-            document.getElementById("setup").innerHTML = data.message;
-            document.getElementById("delivery").innerHTML = "";
-        }
-        else if (data.type == "single") {
+        if (data.type == "single") {
             document.getElementById("setup").innerHTML = data.joke;
             document.getElementById("delivery").innerHTML = "";
 
-        } else {
+        } else if (data.type == "twopart") {
             document.getElementById("setup").innerHTML = data.setup + "<hr>";
             document.getElementById("delivery").innerHTML = data.delivery;
+        } else {
+            document.getElementById("setup").innerHTML = "No matching joke found. Remove some filters and try again!";
+            document.getElementById("delivery").innerHTML = "";
         }
         
     }
