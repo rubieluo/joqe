@@ -1,0 +1,25 @@
+{
+    "name": "joqe",
+    "description": "This chrome extension will provide a joke when you are feeling down :-)",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "imgs/j16.png",
+        "32": "imgs/j32.png",
+        "48": "imgs/j48.png",
+        "128": "imgs/j128.png"
+    },
+    "permissions": [
+        "tabs",
+        "https://www.google.com/*",
+        "storage"
+    ],
+    "content_security_policy": "script-src 'self' https://code.jquery.com/jquery-3.2.1.slim.min.js https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js https://kit.fontawesome.com/da0ee8e8d8.js https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js; object-src 'self'"
+}

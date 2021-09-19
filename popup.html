@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/da0ee8e8d8.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="popup.css">
+
+</head>
+
+
+<body>
+     
+
+        <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <section id="title">
+            <br>
+            <h1 class="big-heading"><img id="joqe" src="imgs/joqe.png" alt=""></h1>
+            <br>
+          </section>
+
+      <div class="tab-content" id="myTabContent">
+        <br>
+
+          <p class="big-heading"> 
+            <button id="generate" type="button" class="btn btn-info">Generate Joke</button>
+          </p>
+        <h3 id="setup" class="center">Click the generate button to get started, or try some advanced settings!</h3>
+        
+        <h3 id="delivery" class="center"></h3>
+
+          
+
+          <p class="center">
+            <a class="small" data-toggle="collapse" href="#advancedsettings" role="button" aria-expanded="false" aria-controls="advancedsettings">Advanced Settings</a>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="advancedsettings">
+
+                <p class="left">Select a genre</p>
+                
+                  <input type="checkbox" class="checkbox" style="width:20%; height:auto;" id="programming" name="programming"> <span>Programming</span>
+                  <input type="checkbox" class="checkbox" style="width:20%; height:auto;" id="misc" name="misc"> <span>Misc</span> <br>
+                  <input type="checkbox" class="checkbox" style="width:20%; height:auto;" id="dark" name="dark"> <span>Dark<span style="color: white;">..............</span></span>
+                  <input type="checkbox" class="checkbox" style="width:20%; height:auto;" id="pun" name="pun"> <span>Pun</span> <br>
+                  <input type="checkbox" class="checkbox" style="width:20%; height:auto;" id="christmas" name="christmas"> <span>Christmas<span style="color: white;">iiiii.</span></span>
+                  <input type="checkbox" class="checkbox" style="width:20%; height:auto;" id="spooky" name="spooky"> <span>Spooky</span>
+                  
+                  <p class="left"><br><br> or</p>
+
+                  <form>
+                    <label for="includes" class="search-label">Search for a specific word!</label><br>
+                    <input type="text" id="includes" name="includes"><br>
+                  </form>
+                  
+                
+              </div>
+            </div>
+          </div>
+          
+        
+
+        </div>
+
+      </div>
+
+      <!-- footer -->
+      <footer id="footer">
+        <p>© Copyright 2021 joqe</p>
+      </footer>
+
+    </div>
+  <script src="popup.js"></script>
+  
+
+</body>
+
+</html>
